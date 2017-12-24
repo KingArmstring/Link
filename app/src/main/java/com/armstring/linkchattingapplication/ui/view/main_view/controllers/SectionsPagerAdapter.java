@@ -1,8 +1,12 @@
-package com.armstring.linkchattingapplication;
+package com.armstring.linkchattingapplication.ui.view.main_view.controllers;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.armstring.linkchattingapplication.ui.view.main_view.fragments.FriendsFragment;
+import com.armstring.linkchattingapplication.ui.view.main_view.fragments.RequestFragment;
+import com.armstring.linkchattingapplication.ui.view.main_view.fragments.ChatsFragment;
 
 /**
  * Created by Darkwood on 12/24/2017.

@@ -1,4 +1,4 @@
-package com.armstring.linkchattingapplication;
+package com.armstring.linkchattingapplication.ui.view.register_view;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -11,12 +11,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.armstring.linkchattingapplication.R;
+import com.armstring.linkchattingapplication.ui.view.main_view.MainActivity;
+import com.armstring.linkchattingapplication.ui.view.mvp_contracts.RegisterContract;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity implements RegisterContract.RegisterView{
     private TextInputLayout name;
     private TextInputLayout email;
     private TextInputLayout password;

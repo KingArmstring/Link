@@ -1,4 +1,4 @@
-package com.armstring.linkchattingapplication;
+package com.armstring.linkchattingapplication.ui.view.main_view;
 
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
@@ -11,10 +11,14 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 
+import com.armstring.linkchattingapplication.R;
+import com.armstring.linkchattingapplication.ui.view.mvp_contracts.MainActivityContract;
+import com.armstring.linkchattingapplication.ui.view.start_view.StartActivity;
+import com.armstring.linkchattingapplication.ui.view.main_view.controllers.SectionsPagerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MainActivityContract.MainView{
 
     private FirebaseAuth mAuth;
     private Toolbar toolbar;
@@ -34,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(sectionsPagerAdapter);
         tabLayout = (TabLayout)findViewById(R.id.mainTabLayoutId);
-        tabLayout.setupWithViewPager(viewPager);
+        tabLayout.setupWithViewPager(viewPager);//using this method requires overriding the method getPageTitle.
         mAuth = FirebaseAuth.getInstance();
 
 

@@ -1,4 +1,4 @@
-package com.armstring.linkchattingapplication;
+package com.armstring.linkchattingapplication.ui.view.login_view;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -11,12 +11,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.armstring.linkchattingapplication.R;
+import com.armstring.linkchattingapplication.ui.view.main_view.MainActivity;
+import com.armstring.linkchattingapplication.ui.view.mvp_contracts.LoginContract;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements LoginContract.LoginView{
 
     private Toolbar toolbar;
     private TextInputLayout loginUserName;

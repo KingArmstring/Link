@@ -1,4 +1,4 @@
-package com.armstring.linkchattingapplication;
+package com.armstring.linkchattingapplication.ui.view.start_view;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class StartActivity extends AppCompatActivity {
+import com.armstring.linkchattingapplication.R;
+import com.armstring.linkchattingapplication.ui.view.login_view.LoginActivity;
+import com.armstring.linkchattingapplication.ui.view.mvp_contracts.StartContract;
+import com.armstring.linkchattingapplication.ui.view.register_view.RegisterActivity;
+
+public class StartActivity extends AppCompatActivity implements StartContract.StartView{
 
     private Button btnRegister;
     private Button btnLogin;
