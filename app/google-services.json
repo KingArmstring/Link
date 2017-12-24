@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "59490746414",
+    "firebase_url": "https://linkchattingapp.firebaseio.com",
+    "project_id": "linkchattingapp",
+    "storage_bucket": "linkchattingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59490746414:android:b0068120572fd2af",
+        "android_client_info": {
+          "package_name": "com.armstring.linkchattingapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59490746414-6bvrl507eq9fohmrm6e2qjtn9q4kqokt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.armstring.linkchattingapplication",
+            "certificate_hash": "383a60a7ab5df879af615d8301969df1f46f4f86"
+          }
+        },
+        {
+          "client_id": "59490746414-oipkmeo3a7oarvf9kps2dg2ngsmg5c17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9cibxq2zK3_ngLyxMGOXGnPoklC_g338"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59490746414-oipkmeo3a7oarvf9kps2dg2ngsmg5c17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

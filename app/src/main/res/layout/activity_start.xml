@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.armstring.linkchattingapplication.StartActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:text="@string/welcom_to_link_chatting_platform"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:text="@string/sign_in"
+        android:layout_above="@+id/btnRegister"
+        android:background="@color/colorAccent"/>
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="@string/need_a_new_account"
+        android:background="@android:color/white"/>
+</RelativeLayout>
