@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 
 import com.armstring.linkchattingapplication.R;
+import com.armstring.linkchattingapplication.ui.view.SettingsActivity;
+import com.armstring.linkchattingapplication.ui.view.UsersActivity;
 import com.armstring.linkchattingapplication.ui.view.mvp_contracts.MainActivityContract;
 import com.armstring.linkchattingapplication.ui.view.start_view.StartActivity;
 import com.armstring.linkchattingapplication.ui.view.main_view.controllers.SectionsPagerAdapter;
@@ -58,9 +60,11 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
             FirebaseAuth.getInstance().signOut();
             travelToStartActivity();
         }else if(item.getItemId() == R.id.allUsersId){
-            Toast.makeText(MainActivity.this, "All Users", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(MainActivity.this, UsersActivity.class);
+            startActivity(intent);
         }else if(item.getItemId() == R.id.mainAccountSettingsId){
-            Toast.makeText(MainActivity.this, "Account Settings", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
         }
         return true;
     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Link Chatting Application</string>
+    <string name="app_name">Link</string>
     <string name="need_a_new_account">NEED A NEW ACCOUNT</string>
     <string name="welcom_to_link_chatting_platform">Welcom To Link Chatting Platform</string>
     <string name="display_name">Display Name</string>
@@ -14,4 +14,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hi_there_i_am_using_link_chat">Hi there, I am using link chat</string>
+    <string name="change_image">change image</string>
+    <string name="change_status">Change status</string>
 </resources>

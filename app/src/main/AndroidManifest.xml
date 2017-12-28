@@ -3,6 +3,8 @@
     package="com.armstring.linkchattingapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -21,8 +23,18 @@
         <activity android:name=".ui.view.start_view.StartActivity" />
         <activity
             android:name=".ui.view.register_view.RegisterActivity"
-            android:parentActivityName=".ui.view.start_view.StartActivity"></activity>
-        <activity android:name=".ui.view.login_view.LoginActivity"></activity>
+            android:parentActivityName=".ui.view.start_view.StartActivity" />
+        <activity android:name=".ui.view.login_view.LoginActivity" />
+        <activity android:name=".ui.view.SettingsActivity" />
+        <activity
+            android:name=".ui.view.StatusActivity"
+            android:parentActivityName=".ui.view.SettingsActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <activity android:name=".ui.view.UsersActivity"
+            android:parentActivityName=".ui.view.main_view.MainActivity"></activity>
     </application>
 
 </manifest>

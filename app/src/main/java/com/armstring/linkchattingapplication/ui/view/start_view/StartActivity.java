@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.armstring.linkchattingapplication.R;
+import com.armstring.linkchattingapplication.ui.view.SettingsActivity;
 import com.armstring.linkchattingapplication.ui.view.login_view.LoginActivity;
 import com.armstring.linkchattingapplication.ui.view.mvp_contracts.StartContract;
 import com.armstring.linkchattingapplication.ui.view.register_view.RegisterActivity;
