@@ -1,5 +1,6 @@
 package com.armstring.linkchattingapplication.ui.view;
 
+import android.content.Intent;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -62,9 +63,20 @@ public class UsersActivity extends AppCompatActivity {
         FirebaseRecyclerAdapter<User, UsersViewHolder> adapter = new FirebaseRecyclerAdapter<User, UsersViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull UsersViewHolder holder, int position, @NonNull User user) {
+                final int pos = position;
                 holder.setName(user.getName());
                 holder.setUserStatus(user.getStatus());
                 holder.setProfileImage(user.getImage());
+                holder.getView().setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(UsersActivity.this, ProfileActivity.class);
+                        String userId = getRef(pos).getKey();
+                        intent.putExtra("USER_CLICKED_ID", userId);
+                        startActivity(intent);
+                    }
+                });
+
             }
 
             @Override
@@ -107,6 +119,10 @@ public class UsersActivity extends AppCompatActivity {
         public void setProfileImage(String imgUrl){
             ImageView imgUserProfile = (ImageView)mView.findViewById(R.id.imgUserIdInUsersActivity);
             Picasso.with(UsersActivity.this).load(imgUrl).into(imgUserProfile);
+        }
+
+        public View getView(){
+            return this.mView;
         }
     }
 }

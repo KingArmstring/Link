@@ -32,9 +32,10 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-
-        <activity android:name=".ui.view.UsersActivity"
-            android:parentActivityName=".ui.view.main_view.MainActivity"></activity>
+        <activity
+            android:name=".ui.view.UsersActivity"
+            android:parentActivityName=".ui.view.main_view.MainActivity" />
+        <activity android:name=".ui.view.ProfileActivity"></activity>
     </application>
 
 </manifest>
